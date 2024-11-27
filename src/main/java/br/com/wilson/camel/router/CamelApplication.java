@@ -1,4 +1,4 @@
-package br.com.wilson.camel;
+package br.com.wilson.camel.router;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

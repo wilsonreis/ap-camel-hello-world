@@ -37,6 +37,7 @@
 			<artifactId>camel-jackson-starter</artifactId>
 			<version>${camel.version}</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>
