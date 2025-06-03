@@ -32,3 +32,105 @@
 2024-11-06T16:47:52.603-03:00  INFO 17532 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route2 (rest://get:/api:/hello2)
 2024-11-06T16:47:52.603-03:00  INFO 17532 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route1 (rest://get:/api:/hello)
 2024-11-06T16:47:52.603-03:00  INFO 17532 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.8.0 (camel-1) shutdown in 12ms (uptime:0s)
+2025-06-03T17:00:57.396-03:00  INFO 10092 --- [main] br.com.wilson.camel.CamelApplication     : Starting CamelApplication using Java 17.0.2 with PID 10092 (C:\w\p\camel\ap-camel-hello-world\target\classes started by A683036 in C:\w\p\camel\ap-camel-hello-world)
+2025-06-03T17:00:57.401-03:00  INFO 10092 --- [main] br.com.wilson.camel.CamelApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-06-03T17:01:00.660-03:00  INFO 10092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-06-03T17:01:00.688-03:00  INFO 10092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-03T17:01:00.689-03:00  INFO 10092 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-06-03T17:01:00.958-03:00  INFO 10092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-03T17:01:00.958-03:00  INFO 10092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3444 ms
+2025-06-03T17:01:03.011-03:00  INFO 10092 --- [main] o.a.c.c.s.CamelHttpTransportServlet      : Initialized CamelHttpTransportServlet[name=CamelServlet, contextPath=]
+2025-06-03T17:01:03.015-03:00  INFO 10092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-06-03T17:01:03.790-03:00  INFO 10092 --- [main] br.com.wilson.camel.router.MyBean        : Forcing 2 sec delay to have slow startup
+2025-06-03T17:01:05.881-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.8.0 (camel-1) is starting
+2025-06-03T17:01:05.908-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:11 rest-dsl:6)
+2025-06-03T17:01:05.908-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route1 (rest://post:/api:/dados)
+2025-06-03T17:01:05.908-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route2 (rest://post:/api:/dados2)
+2025-06-03T17:01:05.908-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route3 (rest://post:/api:/dados3)
+2025-06-03T17:01:05.909-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route4 (rest://get:/api:/hello)
+2025-06-03T17:01:05.909-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route5 (rest://get:/api:/hello2)
+2025-06-03T17:01:05.909-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route6 (timer://foo)
+2025-06-03T17:01:05.909-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route7 (direct://slow)
+2025-06-03T17:01:05.909-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route8 (direct://eletronico)
+2025-06-03T17:01:05.909-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route9 (direct://roupa)
+2025-06-03T17:01:05.909-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route10 (direct://geral)
+2025-06-03T17:01:05.909-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route11 (rest://post:/api/pedidos)
+2025-06-03T17:01:05.910-03:00  INFO 10092 --- [main] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.8.0 (camel-1) started in 26ms (build:0ms init:0ms start:26ms)
+2025-06-03T17:01:05.917-03:00  INFO 10092 --- [main] br.com.wilson.camel.CamelApplication     : Started CamelApplication in 9.422 seconds (process running for 10.3)
+2025-06-03T17:01:06.917-03:00  INFO 10092 --- [Camel (camel-1) thread #1 - timer://foo] route6                                   : Hello how are you?
+2025-06-03T17:01:10.873-03:00  INFO 10092 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-03T17:01:10.875-03:00  INFO 10092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-03T17:01:10.877-03:00  INFO 10092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-03T17:02:46.907-03:00  INFO 10092 --- [Camel (camel-1) thread #1 - timer://foo] route6                                   : Hello how are you?
+2025-06-03T17:04:17.770-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.c.s.CamelHttpTransportServlet      : Destroyed CamelHttpTransportServlet[CamelServlet]
+2025-06-03T17:04:17.786-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.8.0 (camel-1) is shutting down (timeout:45s)
+2025-06-03T17:04:17.814-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Routes stopped (total:11 rest-dsl:6)
+2025-06-03T17:04:17.814-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route11 (rest://post:/api/pedidos)
+2025-06-03T17:04:17.814-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route10 (direct://geral)
+2025-06-03T17:04:17.814-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route9 (direct://roupa)
+2025-06-03T17:04:17.814-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route8 (direct://eletronico)
+2025-06-03T17:04:17.814-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route7 (direct://slow)
+2025-06-03T17:04:17.815-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route6 (timer://foo)
+2025-06-03T17:04:17.815-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route5 (rest://get:/api:/hello2)
+2025-06-03T17:04:17.815-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route4 (rest://get:/api:/hello)
+2025-06-03T17:04:17.815-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route3 (rest://post:/api:/dados3)
+2025-06-03T17:04:17.815-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route2 (rest://post:/api:/dados2)
+2025-06-03T17:04:17.815-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route1 (rest://post:/api:/dados)
+2025-06-03T17:04:17.818-03:00  INFO 10092 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.8.0 (camel-1) shutdown in 32ms (uptime:3m11s)
+2025-06-03T17:04:33.642-03:00  INFO 10996 --- [main] br.com.wilson.camel.CamelApplication     : Starting CamelApplication using Java 17.0.2 with PID 10996 (C:\w\p\camel\ap-camel-hello-world\target\classes started by A683036 in C:\w\p\camel\ap-camel-hello-world)
+2025-06-03T17:04:33.648-03:00  INFO 10996 --- [main] br.com.wilson.camel.CamelApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-06-03T17:04:37.519-03:00  INFO 10996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-06-03T17:04:37.549-03:00  INFO 10996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-03T17:04:37.549-03:00  INFO 10996 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-06-03T17:04:37.863-03:00  INFO 10996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-03T17:04:37.863-03:00  INFO 10996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4109 ms
+2025-06-03T17:04:39.654-03:00  INFO 10996 --- [main] o.a.c.c.s.CamelHttpTransportServlet      : Initialized CamelHttpTransportServlet[name=CamelServlet, contextPath=]
+2025-06-03T17:04:39.662-03:00  INFO 10996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-06-03T17:04:40.418-03:00  INFO 10996 --- [main] br.com.wilson.camel.router.MyBean        : Forcing 2 sec delay to have slow startup
+2025-06-03T17:04:42.503-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.8.0 (camel-1) is starting
+2025-06-03T17:04:42.542-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   : Routes startup (total:11 rest-dsl:6)
+2025-06-03T17:04:42.542-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route1 (rest://get:/api:/hello)
+2025-06-03T17:04:42.542-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route2 (rest://post:/api:/dados)
+2025-06-03T17:04:42.542-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route3 (rest://post:/api:/dados2)
+2025-06-03T17:04:42.542-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route4 (rest://post:/api:/dados3)
+2025-06-03T17:04:42.542-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route5 (rest://get:/api:/hello2)
+2025-06-03T17:04:42.543-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route6 (timer://foo)
+2025-06-03T17:04:42.543-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route7 (direct://slow)
+2025-06-03T17:04:42.543-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route8 (direct://eletronico)
+2025-06-03T17:04:42.543-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route9 (direct://roupa)
+2025-06-03T17:04:42.543-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route10 (direct://geral)
+2025-06-03T17:04:42.543-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   :     Started route11 (rest://post:/api/pedidos)
+2025-06-03T17:04:42.543-03:00  INFO 10996 --- [main] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.8.0 (camel-1) started in 30ms (build:0ms init:0ms start:30ms)
+2025-06-03T17:04:42.552-03:00  INFO 10996 --- [main] br.com.wilson.camel.CamelApplication     : Started CamelApplication in 9.791 seconds (process running for 10.749)
+2025-06-03T17:04:43.554-03:00  INFO 10996 --- [Camel (camel-1) thread #1 - timer://foo] route6                                   : Hello how are you?
+2025-06-03T17:04:54.503-03:00  INFO 10996 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-03T17:04:54.504-03:00  INFO 10996 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-03T17:04:54.506-03:00  INFO 10996 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-03T17:06:23.543-03:00  INFO 10996 --- [Camel (camel-1) thread #1 - timer://foo] route6                                   : Hello how are you?
+2025-06-03T17:08:03.553-03:00  INFO 10996 --- [Camel (camel-1) thread #1 - timer://foo] route6                                   : Hello how are you?
+2025-06-03T17:09:43.557-03:00  INFO 10996 --- [Camel (camel-1) thread #1 - timer://foo] route6                                   : Hello how are you?
+2025-06-03T17:11:00.566-03:00  INFO 10996 --- [http-nio-8080-exec-3] route1                                   : Received request for /api/hello
+2025-06-03T17:11:23.560-03:00  INFO 10996 --- [Camel (camel-1) thread #1 - timer://foo] route6                                   : Hello how are you?
+2025-06-03T17:13:03.565-03:00  INFO 10996 --- [Camel (camel-1) thread #1 - timer://foo] route6                                   : Hello how are you?
+2025-06-03T17:14:43.585-03:00  INFO 10996 --- [Camel (camel-1) thread #1 - timer://foo] route6                                   : Hello how are you?
+2025-06-03T17:15:04.388-03:00  INFO 10996 --- [http-nio-8080-exec-5] route1                                   : Received request for /api/hello
+2025-06-03T17:16:22.690-03:00  INFO 10996 --- [http-nio-8080-exec-9] route5                                   : Received request for /api/hello2
+2025-06-03T17:16:23.597-03:00  INFO 10996 --- [Camel (camel-1) thread #1 - timer://foo] route6                                   : Hello how are you?
+2025-06-03T17:16:52.834-03:00  INFO 10996 --- [http-nio-8080-exec-10] route5                                   : Received request for /api/hello2
+2025-06-03T17:17:55.614-03:00  INFO 10996 --- [http-nio-8080-exec-8] route1                                   : Received request for /api/hello
+2025-06-03T17:18:03.596-03:00  INFO 10996 --- [Camel (camel-1) thread #1 - timer://foo] route6                                   : Hello how are you?
+2025-06-03T17:18:05.646-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.c.s.CamelHttpTransportServlet      : Destroyed CamelHttpTransportServlet[CamelServlet]
+2025-06-03T17:18:05.662-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.8.0 (camel-1) is shutting down (timeout:45s)
+2025-06-03T17:18:05.676-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Routes stopped (total:11 rest-dsl:6)
+2025-06-03T17:18:05.676-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route11 (rest://post:/api/pedidos)
+2025-06-03T17:18:05.676-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route10 (direct://geral)
+2025-06-03T17:18:05.676-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route9 (direct://roupa)
+2025-06-03T17:18:05.676-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route8 (direct://eletronico)
+2025-06-03T17:18:05.676-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route7 (direct://slow)
+2025-06-03T17:18:05.676-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route6 (timer://foo)
+2025-06-03T17:18:05.676-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route5 (rest://get:/api:/hello2)
+2025-06-03T17:18:05.676-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route4 (rest://post:/api:/dados3)
+2025-06-03T17:18:05.676-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route3 (rest://post:/api:/dados2)
+2025-06-03T17:18:05.676-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route2 (rest://post:/api:/dados)
+2025-06-03T17:18:05.677-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   :     Stopped route1 (rest://get:/api:/hello)
+2025-06-03T17:18:05.681-03:00  INFO 10996 --- [SpringApplicationShutdownHook] o.a.c.impl.engine.AbstractCamelContext   : Apache Camel 4.8.0 (camel-1) shutdown in 18ms (uptime:13m23s)

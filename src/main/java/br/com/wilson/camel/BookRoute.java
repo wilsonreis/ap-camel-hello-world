@@ -1,4 +1,4 @@
-package br.com.wilson.camel.router;
+package br.com.wilson.camel;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.rest.RestBindingMode;
@@ -20,3 +20,4 @@ public class BookRoute extends RouteBuilder {
                 .setBody(constant("Hello, World!"));
     }
 }
+//http://localhost:8080/camel/api/hello
